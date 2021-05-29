@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Gama_Resellers::Reseller" title="Reseller" sortOrder="10">
+					<resource id="Gama_Resellers::Reseller_save" title="Save Reseller" sortOrder="10"/>
+					<resource id="Gama_Resellers::Reseller_delete" title="Delete Reseller" sortOrder="20"/>
+					<resource id="Gama_Resellers::Reseller_update" title="Update Reseller" sortOrder="30"/>
+					<resource id="Gama_Resellers::Reseller_view" title="View Reseller" sortOrder="40"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

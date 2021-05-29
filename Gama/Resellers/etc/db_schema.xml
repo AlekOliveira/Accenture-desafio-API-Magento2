@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="gama_resellers_reseller" resource="default" engine="innodb" comment="gama_resellers_reseller Table">
+		<column xsi:type="smallint" name="reseller_id" padding="6" unsigned="true" nullable="false" identity="true" comment="Entity Id"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="reseller_id"/>
+		</constraint>
+		<column name="name" nullable="true" xsi:type="text" comment="name"/>
+		<column name="gender" nullable="true" xsi:type="text" comment="gender"/>
+		<column name="zipcode" nullable="true" xsi:type="text" comment="zipcode"/>
+		<column name="phone" nullable="true" xsi:type="text" comment="phone"/>
+		<column name="email" nullable="true" xsi:type="text" comment="email"/>
+		<column name="nationalID" nullable="true" xsi:type="text" comment="nationalID"/>
+		<column name="street_number" nullable="true" xsi:type="text" comment="street_number"/>
+	</table>
+</schema>
